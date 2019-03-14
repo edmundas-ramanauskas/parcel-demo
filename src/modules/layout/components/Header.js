@@ -18,7 +18,7 @@ const Header = () => (
     <Container>
       <Navbar.Brand as="span">
         <BrandLink to={home()}>
-          <img src={logo} alt="Logo" /> App
+          <img height="30" src={logo} alt="Logo" /> App
         </BrandLink>
       </Navbar.Brand>
     </Container>

@@ -1,10 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Route, Switch} from 'react-router-dom';
-import asyncComponent from '@lib/asyncComponent';
-
-const Dashboard = asyncComponent(() => import('@modules/dashboard'));
-const NotFound = asyncComponent(() => import('@modules/not-found'));
+// import Dashboard from '../../../modules/dashboard';
+import Dashboard from '@modules/dashboard';
+import NotFound from '@modules/not-found';
 
 const Root = () => (
   <Router>
