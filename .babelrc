@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": [
+    ["babel-plugin-module-resolver", {
+      "alias": {
+        "^@lib/([^/]+)$": "./src/libraries/\\1",
+        "^@modules/([^/]+)$": "./src/modules/\\1",
+        "^@modules/([^/]+)/([^/]+)$": "./src/modules/\\1/\\2"
+      }
+    }]
+  ]
+}
