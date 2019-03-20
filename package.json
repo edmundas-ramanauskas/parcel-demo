@@ -12,15 +12,15 @@
     "build": "parcel build src/entries/app/index.html"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
+    "@babel/core": "^7.4.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-emotion": "^10.0.9",
     "babel-plugin-module-resolver": "^3.2.0",
-    "eslint": "^5.15.1",
+    "eslint": "^5.15.3",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "parcel-bundler": "^1.12.0",
+    "parcel-bundler": "^1.12.2",
     "parcel-plugin-clean-dist": "^0.0.6",
     "prettier": "^1.16.4"
   },
@@ -28,11 +28,10 @@
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
     "bootstrap": "^4.3.1",
-    "lib": "^4.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.4",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   }
 }

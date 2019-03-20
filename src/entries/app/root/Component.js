@@ -1,15 +1,18 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
-import {Route, Switch} from 'react-router-dom';
-// import Dashboard from '../../../modules/dashboard';
-import Dashboard from '@modules/dashboard';
-import NotFound from '@modules/not-found';
+import {Redirect, Route, Switch} from 'react-router-dom';
+import asyncComponent from '@lib/asyncComponent';
+// import Dashboard from '@modules/dashboard';
+
+const Account = asyncComponent(() => import('@modules/account'));
+const Dashboard = asyncComponent(() => import('@modules/dashboard'));
 
 const Root = () => (
   <Router>
     <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route component={NotFound} />
+      <Route path="/account" component={Account} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Redirect to="/dashboard" />
     </Switch>
   </Router>
 );
